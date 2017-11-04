@@ -8,15 +8,14 @@
 
 html, body {
     width: 100%;
-    height: 100%;
 }
 
 .header {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .container {
@@ -54,11 +53,15 @@ html, body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.33px;
+}
+
+.nav .nav-link {
     margin-left: 3em;
 }
 
 .nav-link:hover {
     color: #00e0d0;
+    transition: .5s;
 }
 
 .cover {
@@ -67,30 +70,38 @@ html, body {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    z-index: 2;
 }
 
 .bg-img {
-    min-height: 100%;
-    background: url("http://businessrally.hu/assets/images/2pic.jpeg") center center no-repeat;
-    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
-.bg-img:before {
+.gradient:before {
     content: '';
-	position: absolute;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     opacity: 0.85;
-    z-index: 0;
+    z-index: 1;
 }
 
-.big-text {
+.section-heading {
     letter-spacing: 0.32px;
     font-weight: 600;
     font-size: 32px;
     color: #ffffff;
     font-family: "Playfair";
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
 }
