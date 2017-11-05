@@ -1,0 +1,33 @@
+.watch-story {
+    height: 100vh;
+}
+
+.fa-play-circle-o {
+    margin-bottom: 35px; 
+
+    &:before {
+    font-size: 100px;
+    }
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+    
+    &-logo {
+        color: $color-white;
+        font-family: $font-header;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+
+}
