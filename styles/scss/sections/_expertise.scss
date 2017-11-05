@@ -26,24 +26,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-
-    li {
-        flex: 0 0 33.3%;
-        max-width: 33.3%;
-        padding: 30px;    
-
-        &:nth-child(3n-2) {
-            border-right: 1px solid $color-border;
-        }
-
-        &:nth-child(3n-1) {
-            border-right: 1px solid $color-border;
-        }
-
-        &:nth-child(n+4) {
-            border-top: 1px solid $color-border;
-        }
-    }
+    justify-content: center;
 }
 
 .header-content {
@@ -58,14 +41,32 @@
     }
 }
 
+.expertise li {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    padding: 30px;    
+
+    &:nth-child(3n-2) {
+        border-right: 1px solid $color-border;
+    }
+
+    &:nth-child(3n-1) {
+        border-right: 1px solid $color-border;
+    }
+
+    &:nth-child(n+4) {
+        border-top: 1px solid $color-border;
+    }
+}
+
 .li-heading {
-    color: $color-grey-light;
     font-family: $font-header;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.7px;
     margin-bottom: 25px;
 }
+
 
 li p {
     color: $color-grey-dark;

@@ -1,8 +1,8 @@
 .gradient {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 
-&:before {
+&:after {
     content: '';
     background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     position: absolute;
