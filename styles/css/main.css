@@ -1,5 +1,17 @@
-/* line 2, ../scss/sections/_header.scss */
-.gradient::before {
+/* line 1, ../scss/sections/_header.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.42px;
+}
+
+/* line 8, ../scss/sections/_header.scss */
+.gradient {
+  height: 100vh;
+}
+/* line 11, ../scss/sections/_header.scss */
+.gradient:before {
   content: '';
   background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
   position: absolute;
@@ -10,7 +22,7 @@
   opacity: 0.85;
   z-index: 1;
 }
-/* line 14, ../scss/sections/_header.scss */
+/* line 23, ../scss/sections/_header.scss */
 .gradient-img {
   position: absolute;
   z-index: 0;
@@ -19,18 +31,18 @@
   overflow: hidden;
 }
 
-/* line 23, ../scss/sections/_header.scss */
+/* line 32, ../scss/sections/_header.scss */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   z-index: 2;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
-/* line 33, ../scss/sections/_header.scss */
+/* line 42, ../scss/sections/_header.scss */
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -40,23 +52,23 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 42, ../scss/sections/_header.scss */
+/* line 51, ../scss/sections/_header.scss */
 .logo-img {
   width: 44px;
   height: 50px;
 }
 
-/* line 48, ../scss/sections/_header.scss */
+/* line 57, ../scss/sections/_header.scss */
 .align-middle {
   vertical-align: top;
 }
 
-/* line 52, ../scss/sections/_header.scss */
+/* line 61, ../scss/sections/_header.scss */
 .nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-/* line 56, ../scss/sections/_header.scss */
+/* line 65, ../scss/sections/_header.scss */
 .nav-link {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -65,17 +77,17 @@
   text-transform: uppercase;
   letter-spacing: 0.33px;
 }
-/* line 65, ../scss/sections/_header.scss */
+/* line 74, ../scss/sections/_header.scss */
 .nav .nav-link {
   margin-left: 3em;
 }
-/* line 68, ../scss/sections/_header.scss */
+/* line 77, ../scss/sections/_header.scss */
 .nav .nav-link:hover {
   color: #00e0d0;
   transition: .5s;
 }
 
-/* line 76, ../scss/sections/_header.scss */
+/* line 85, ../scss/sections/_header.scss */
 .cover {
   position: absolute;
   top: 50%;
@@ -83,4 +95,98 @@
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
+}
+
+/* line 95, ../scss/sections/_header.scss */
+.main-heading {
+  letter-spacing: 0.32px;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+}
+/* line 103, ../scss/sections/_header.scss */
+.main-heading:after {
+  content: '';
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom-style: inset;
+  border-bottom-width: 0.5px;
+  border-bottom-color: #00e0d0;
+}
+
+/* line 116, ../scss/sections/_header.scss */
+.cover p {
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+/* line 1, ../scss/sections/_buttons.scss */
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid #00e0d0;
+}
+/* line 9, ../scss/sections/_buttons.scss */
+.btn-lg {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px;
+}
+/* line 17, ../scss/sections/_buttons.scss */
+.btn-primary {
+  color: #00e0d0;
+  background-color: transparent;
+  border-color: #00e0d0;
+}
+
+/* line 1, ../scss/sections/_our-story.scss */
+.our-story {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* line 6, ../scss/sections/_our-story.scss */
+.our-story-img {
+  margin-right: 100px;
+  max-width: 235px;
+  height: 229px;
+}
+/* line 12, ../scss/sections/_our-story.scss */
+.our-story p {
+  opacity: 0.9;
+  color: #413d4b;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+/* line 20, ../scss/sections/_our-story.scss */
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  margin: 0 auto;
+}
+
+/* line 29, ../scss/sections/_our-story.scss */
+.header-section {
+  letter-spacing: 1.1px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #413d4b;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
 }

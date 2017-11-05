@@ -1,5 +1,14 @@
+body {
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.42px;
+}
+
 .gradient {
-    &::before {
+        height: 100vh;
+
+    &:before {
         content: '';
         background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
         position: absolute;
@@ -26,7 +35,7 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -51,7 +60,7 @@
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     &-link {
         color: $color-white;
@@ -80,4 +89,34 @@
     transform: translate(-50%,-50%);
     text-align: center;
     z-index: 2;
+}
+
+
+.main-heading {
+    letter-spacing: 0.32px;
+    font-weight: 600;
+    font-size: 32px;
+    color: $color-white;
+    font-family: $font-heading;
+    margin-bottom: 30px;
+
+    &:after {
+        content: '';
+        padding-top: 20px;
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        border-bottom-style: inset;    
+        border-bottom-width: 0.5px;
+        border-bottom-color: $color-green;
+    }
+}
+
+.cover {
+    p {
+        letter-spacing: 0.7px;
+        line-height: 24px;
+        color: $color-white;      
+        margin-bottom: 50px;
+    }
 }

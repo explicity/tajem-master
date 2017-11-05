@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid $color-green;
+
+    &-lg {
+        font-family: $font-btn;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+
+    &-primary {
+        color: $color-green;        
+        background-color: transparent;
+        border-color: $color-green;
+    }
+
+}

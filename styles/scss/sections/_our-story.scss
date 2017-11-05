@@ -1,0 +1,38 @@
+.our-story {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &-img {
+        margin-right: 100px;
+        max-width: 235px;
+        height: 229px;
+    }
+
+    p {
+        opacity: 0.9;
+        color: $color-grey-light;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+} 
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.header-section {
+    letter-spacing: 1.1px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    font-family: $font-heading;
+    margin-bottom: 30px;
+}
+
