@@ -476,3 +476,23 @@ li p {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+/* line 1, ../scss/sections/_our-works.scss */
+.our-works {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 9, ../scss/sections/_our-works.scss */
+.header-link:after {
+  content: '';
+  border-style: solid;
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent currentColor;
+  margin: 0 0 0 5px;
+  width: 0;
+  height: 0;
+  display: inline-block;
+}

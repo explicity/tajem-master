@@ -1,0 +1,19 @@
+.our-works {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    &-link:after {
+        content: '';
+        border-style: solid;
+        border-width: 6px 0 6px 6px;
+        border-color: transparent transparent transparent currentColor;
+        margin: 0 0 0 5px;
+        width: 0;
+        height: 0;
+        display: inline-block;
+    }
+}
