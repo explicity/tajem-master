@@ -1,11 +1,30 @@
 .our-works {
+    padding: 70px 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    & .row {
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    &-img {
+        width: 265px;
+        height: 100%;
+    }
+
+    div {
+        margin: 0px auto;
+    }
+
 }
 
-.header {
+.our-works .header {
+    padding: 70px 15px 0 15px;
+    margin-bottom: 70px;
+
     &-link:after {
         content: '';
         border-style: solid;

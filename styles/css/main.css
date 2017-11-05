@@ -6,8 +6,9 @@
   vertical-align: middle;
   user-select: none;
   border: 1px solid #00e0d0;
+  margin-bottom: 10px;
 }
-/* line 9, ../scss/sections/_buttons.scss */
+/* line 10, ../scss/sections/_buttons.scss */
 .btn-lg {
   font-family: "Hammersmith One", sans-serif;
   font-size: 16px;
@@ -15,14 +16,14 @@
   text-transform: uppercase;
   padding: 15px;
 }
-/* line 17, ../scss/sections/_buttons.scss */
+/* line 18, ../scss/sections/_buttons.scss */
 .btn-primary {
   color: #00e0d0;
   background-color: transparent;
   border-color: #00e0d0;
 }
 
-/* line 25, ../scss/sections/_buttons.scss */
+/* line 26, ../scss/sections/_buttons.scss */
 .button {
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@
   cursor: pointer;
   outline: none;
 }
-/* line 34, ../scss/sections/_buttons.scss */
+/* line 35, ../scss/sections/_buttons.scss */
 .button-logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -141,9 +142,10 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
+  padding: 0 10px;
 }
 
-/* line 72, ../scss/sections/_header.scss */
+/* line 73, ../scss/sections/_header.scss */
 .main-heading {
   letter-spacing: 0.32px;
   font-weight: 600;
@@ -152,7 +154,7 @@ body {
   font-family: "Playfair Display", serif;
   margin-bottom: 30px;
 }
-/* line 80, ../scss/sections/_header.scss */
+/* line 81, ../scss/sections/_header.scss */
 .main-heading:after {
   border-bottom-color: #00e0d0;
   padding-top: 20px;
@@ -164,7 +166,7 @@ body {
   border-bottom-width: 0.5px;
 }
 
-/* line 86, ../scss/sections/_header.scss */
+/* line 87, ../scss/sections/_header.scss */
 .cover p {
   letter-spacing: 0.7px;
   line-height: 24px;
@@ -479,14 +481,34 @@ li p {
 
 /* line 1, ../scss/sections/_our-works.scss */
 .our-works {
+  padding: 70px 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+/* line 8, ../scss/sections/_our-works.scss */
+.our-works .row {
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+/* line 13, ../scss/sections/_our-works.scss */
+.our-works-img {
+  width: 265px;
+  height: 100%;
+}
+/* line 18, ../scss/sections/_our-works.scss */
+.our-works div {
+  margin: 0px auto;
+}
 
-/* line 9, ../scss/sections/_our-works.scss */
-.header-link:after {
+/* line 24, ../scss/sections/_our-works.scss */
+.our-works .header {
+  padding: 70px 15px 0 15px;
+  margin-bottom: 70px;
+}
+/* line 28, ../scss/sections/_our-works.scss */
+.our-works .header-link:after {
   content: '';
   border-style: solid;
   border-width: 6px 0 6px 6px;
