@@ -2,10 +2,12 @@
 @import "compass/css3";
 
 @import "base/variables";
+@import "base/mixins";
 
 @import "sections/buttons";
 @import "sections/gradient";
 
 @import "sections/header";
 @import "sections/our-story";
-@import "sections/watch-story"
+@import "sections/watch-story";
+@import "sections/expertise";

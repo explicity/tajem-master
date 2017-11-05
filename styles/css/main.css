@@ -22,6 +22,26 @@
   border-color: #00e0d0;
 }
 
+/* line 25, ../scss/sections/_buttons.scss */
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+/* line 34, ../scss/sections/_buttons.scss */
+.button-logo {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
 /* line 1, ../scss/sections/_gradient.scss */
 .gradient {
   height: 100vh;
@@ -63,11 +83,12 @@ body {
   justify-content: space-between;
   position: relative;
   z-index: 2;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* line 18, ../scss/sections/_header.scss */
+/* line 19, ../scss/sections/_header.scss */
 .logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -77,23 +98,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 27, ../scss/sections/_header.scss */
+/* line 28, ../scss/sections/_header.scss */
 .logo-img {
   width: 44px;
   height: 50px;
 }
 
-/* line 33, ../scss/sections/_header.scss */
+/* line 34, ../scss/sections/_header.scss */
 .align-middle {
   vertical-align: top;
 }
 
-/* line 37, ../scss/sections/_header.scss */
+/* line 38, ../scss/sections/_header.scss */
 .nav {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 41, ../scss/sections/_header.scss */
+/* line 42, ../scss/sections/_header.scss */
 .nav-link {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -102,17 +123,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.33px;
 }
-/* line 50, ../scss/sections/_header.scss */
+/* line 51, ../scss/sections/_header.scss */
 .nav .nav-link {
   margin-left: 3em;
 }
-/* line 53, ../scss/sections/_header.scss */
+/* line 54, ../scss/sections/_header.scss */
 .nav .nav-link:hover {
   color: #00e0d0;
   transition: .5s;
 }
 
-/* line 61, ../scss/sections/_header.scss */
+/* line 62, ../scss/sections/_header.scss */
 .cover {
   position: absolute;
   top: 50%;
@@ -122,7 +143,7 @@ body {
   z-index: 2;
 }
 
-/* line 71, ../scss/sections/_header.scss */
+/* line 72, ../scss/sections/_header.scss */
 .main-heading {
   letter-spacing: 0.32px;
   font-weight: 600;
@@ -131,19 +152,19 @@ body {
   font-family: "Playfair Display", serif;
   margin-bottom: 30px;
 }
-/* line 79, ../scss/sections/_header.scss */
+/* line 80, ../scss/sections/_header.scss */
 .main-heading:after {
-  content: '';
+  border-bottom-color: #00e0d0;
   padding-top: 20px;
+  content: '';
   display: block;
   margin: 0 auto;
   width: 50px;
   border-bottom-style: inset;
   border-bottom-width: 0.5px;
-  border-bottom-color: #00e0d0;
 }
 
-/* line 92, ../scss/sections/_header.scss */
+/* line 86, ../scss/sections/_header.scss */
 .cover p {
   letter-spacing: 0.7px;
   line-height: 24px;
@@ -154,34 +175,42 @@ body {
 /* line 1, ../scss/sections/_our-story.scss */
 .our-story {
   min-height: 100vh;
+  padding: 70px 0;
   display: flex;
   align-items: center;
 }
-/* line 6, ../scss/sections/_our-story.scss */
+/* line 7, ../scss/sections/_our-story.scss */
 .our-story-img {
   margin-right: 100px;
   max-width: 235px;
   height: 229px;
 }
-/* line 12, ../scss/sections/_our-story.scss */
+/* line 13, ../scss/sections/_our-story.scss */
 .our-story p {
   opacity: 0.9;
   color: #413d4b;
   line-height: 22px;
   margin-bottom: 30px;
 }
-
 /* line 20, ../scss/sections/_our-story.scss */
+.our-story .wrapper {
+  flex-wrap: nowrap;
+  width: 55%;
+}
+/* line 25, ../scss/sections/_our-story.scss */
+.our-story h3 {
+  margin-bottom: 30px;
+}
+
+/* line 30, ../scss/sections/_our-story.scss */
 .wrapper {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 55%;
   margin: 0 auto;
 }
 
-/* line 29, ../scss/sections/_our-story.scss */
+/* line 37, ../scss/sections/_our-story.scss */
 .header-section {
   letter-spacing: 1.1px;
   font-size: 22px;
@@ -189,7 +218,6 @@ body {
   text-transform: uppercase;
   color: #413d4b;
   font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
 }
 
 /* line 1, ../scss/sections/_watch-story.scss */
@@ -206,24 +234,161 @@ body {
   font-size: 100px;
 }
 
-/* line 13, ../scss/sections/_watch-story.scss */
-.button {
+/* line 1, ../scss/sections/_expertise.scss */
+.expertise {
+  padding: 70px 0;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
+  text-align: center;
 }
-/* line 24, ../scss/sections/_watch-story.scss */
-.button-logo {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+/* line 7, ../scss/sections/_expertise.scss */
+.expertise .wrapper {
+  width: 60%;
+  flex-direction: column;
+}
+/* line 12, ../scss/sections/_expertise.scss */
+.expertise header {
+  margin-bottom: 50px;
+}
+/* line 15, ../scss/sections/_expertise.scss */
+.expertise header h3 {
+  margin-bottom: 15px;
+}
+/* line 19, ../scss/sections/_expertise.scss */
+.expertise header .header-content {
+  color: #2f2d35;
+}
+
+/* line 26, ../scss/sections/_expertise.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 30, ../scss/sections/_expertise.scss */
+.row li {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  padding: 30px;
+}
+/* line 35, ../scss/sections/_expertise.scss */
+.row li:nth-child(3n-2) {
+  border-right: 1px solid rgba(0, 0, 0, 0.34);
+}
+/* line 39, ../scss/sections/_expertise.scss */
+.row li:nth-child(3n-1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.34);
+}
+/* line 43, ../scss/sections/_expertise.scss */
+.row li:nth-child(n+4) {
+  border-top: 1px solid rgba(0, 0, 0, 0.34);
+}
+
+/* line 49, ../scss/sections/_expertise.scss */
+.header-content {
+  font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 16px;
+  letter-spacing: 1.05px;
+  opacity: 0.75;
+}
+/* line 55, ../scss/sections/_expertise.scss */
+.header-content:after {
+  border-bottom-color: #413d4b;
+  padding-top: 15px;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom-style: inset;
+  border-bottom-width: 0.5px;
+  opacity: 0.7;
+}
+
+/* line 61, ../scss/sections/_expertise.scss */
+.li-heading {
+  color: #413d4b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
+  margin-bottom: 25px;
+}
+
+/* line 70, ../scss/sections/_expertise.scss */
+li p {
+  color: #333;
+  line-height: 22px;
+  letter-spacing: 0.7px;
+}
+
+/* line 78, ../scss/sections/_expertise.scss */
+.picture-one:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/first.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+/* line 82, ../scss/sections/_expertise.scss */
+.picture-two:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/second.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+/* line 86, ../scss/sections/_expertise.scss */
+.picture-three:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/third.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+/* line 90, ../scss/sections/_expertise.scss */
+.picture-four:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/forth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+/* line 94, ../scss/sections/_expertise.scss */
+.picture-five:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/fifth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+/* line 98, ../scss/sections/_expertise.scss */
+.picture-six:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/sixth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
 }

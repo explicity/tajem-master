@@ -1,5 +1,6 @@
 .our-story {
     min-height: 100vh;
+    padding: 70px 0;
     display: flex;
     align-items: center;
 
@@ -15,15 +16,22 @@
         line-height: 22px;
         margin-bottom: 30px;
     }
+
+    & .wrapper {
+        flex-wrap: nowrap;
+        width: 55%;
+    }
+
+    h3 {
+        margin-bottom: 30px;    
+    }
 } 
 
 .wrapper {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    width: 55%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .header-section {
@@ -33,6 +41,5 @@
     text-transform: uppercase;
     color: $color-grey-light;
     font-family: $font-heading;
-    margin-bottom: 30px;
 }
 

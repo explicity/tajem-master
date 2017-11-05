@@ -1,0 +1,22 @@
+@mixin separator ($padding, $color) {
+    border-bottom-color: $color;
+    padding-top: $padding;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-bottom-style: inset;    
+    border-bottom-width: 0.5px;
+}
+
+@mixin pseudo($img) {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 35px auto;
+    z-index: 5; 
+}

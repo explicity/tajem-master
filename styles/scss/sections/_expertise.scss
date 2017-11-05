@@ -1,0 +1,101 @@
+.expertise {
+    padding: 70px 0;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+
+    & .wrapper {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    header {
+        margin-bottom: 50px;
+        
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        & .header-content {
+            color: $color-grey-medium;
+        }
+    }
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+        padding: 30px;    
+
+        &:nth-child(3n-2) {
+            border-right: 1px solid $color-border;
+        }
+
+        &:nth-child(3n-1) {
+            border-right: 1px solid $color-border;
+        }
+
+        &:nth-child(n+4) {
+            border-top: 1px solid $color-border;
+        }
+    }
+}
+
+.header-content {
+    font-family: $font-heading;
+    font-weight: 400;
+    letter-spacing: 1.05px;
+    opacity: 0.75;   
+    
+    &:after {
+        @include separator(15px, $color-grey-light);
+        opacity: 0.7;
+    }
+}
+
+.li-heading {
+    color: $color-grey-light;
+    font-family: $font-header;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+}
+
+li p {
+    color: $color-grey-dark;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+}
+
+
+.picture {
+    &-one:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/first.png');
+    }
+
+    &-two:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/second.png');
+    }
+
+    &-three:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/third.png');
+    }
+
+    &-four:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/forth.png');
+    }
+    
+    &-five:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/fifth.png');
+    }
+
+    &-six:before {
+        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/sixth.png');
+    }
+}
