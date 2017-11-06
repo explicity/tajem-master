@@ -17,26 +17,26 @@
         <img src="img/bg.png" alt="logo-img" class="gradient-img">
 
         <header class="header">
+            <div class="wrapper">
+                <h1>
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="logo-img" class="align-middle logo-img">
+                        tajam
+                    </a>
+                </h1>
 
-            <h1>
-                <a href="#" class="logo">
-                    <img src="img/logo.png" alt="logo-img" class="align-middle logo-img">
-                    tajam
-                </a>
-            </h1>
-
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home" class="nav-link">home</a></li>
-                    <li><a href="#about" class="nav-link">about</a></li>
-                    <li><a href="#expertise" class="nav-link">expertise</a></li>
-                    <li><a href="#team" class="nav-link">team</a></li>
-                    <li><a href="#people-say" class="nav-link">people say</a></li>
-                    <li><a href="#works" class="nav-link">works</a></li>
-                    <li><a href="#contact" class="nav-link">contact</a></li>
-                </ul>
-            </nav>
-
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home" class="nav-link">home</a></li>
+                        <li><a href="#about" class="nav-link">about</a></li>
+                        <li><a href="#expertise" class="nav-link">expertise</a></li>
+                        <li><a href="#team" class="nav-link">team</a></li>
+                        <li><a href="#people-say" class="nav-link">people say</a></li>
+                        <li><a href="#works" class="nav-link">works</a></li>
+                        <li><a href="#contact" class="nav-link">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main class="cover">
@@ -50,7 +50,7 @@
     </div>
 
     <section class="our-story" id="home">
-        <div class="wrapper">
+        <div class="wrapper row">
             <img src="img/arrow.png" alt="our-story" class="our-story-img">
             <div>
                 <h3 class="header-section">our story</h3>
@@ -149,8 +149,10 @@
 
     <section class="our-works" id="works">
         <header class="header">
-            <h3 class="header-section">Our Works</h3>
-            <a href="#" class="header-link">See All Project in dribble</a>
+            <div class="wrapper">
+                <h3 class="header-section">Our Works</h3>
+                <a href="#" class="header-link">See All Project in dribble</a>
+            </div>
         </header>
 
         <ul class="row">
@@ -198,7 +200,7 @@
 
     <section class="people-say gradient" id="people-say">
         <div class="wrapper">
-            
+
             <article class="article">
                 <p class="quotes">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                     lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
@@ -229,30 +231,41 @@
     </section>
 
     <section class="news-clients">
-        <div class="wrapper">
-            <div>
-                <h3>GIVE US A GOOD NEWS</h3>                    
+        <div class="wrapper row">
+            <div class="col">
+                <h3 class="header-section">GIVE US A GOOD NEWS</h3>
                 <form action="#" method="post">
-                    <input type="text" name="user_name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <div>
+                        <input type="text" name="user_name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                    </div>
                 </form>
             </div>
-            <div>
-                    <h3>OUR HAPPY CLIENT</h3>
-                    <ul class="row">
-                        <li><img src="img/c1.png" alt="zara"></li>
-                        <li><img src="img/c2.png" alt="mango"></li>
-                        <li><img src="img/c3.png" alt="barneys-ny"></li>
-                        <li><img src="img/c4.png" alt="gucci"></li>
-                        <li><img src="img/c5.png" alt="calvin-klein"></li>
-                        <li><img src="img/c6.png" alt="nike"></li>
-                        <li><img src="img/c7.png" alt="converse"></li>
-                        <li><img src="img/c8.png" alt="puma"></li>
-                        <li><img src="img/c9.png" alt="levis"></li>
-                        <li><img src="img/c10.png" alt="billiabong"></li>
-                    </ul>
+            <div class="col">
+                <h3 class="header-section">OUR HAPPY CLIENT</h3>
+                <ul class="row">
+                    <li class="col"><img src="img/c1.png" alt="zara" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c2.png" alt="mango" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c3.png" alt="barneys-ny" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c4.png" alt="gucci" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c5.png" alt="calvin-klein" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c6.png" alt="nike" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c7.png" alt="converse" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c8.png" alt="puma" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c9.png" alt="levis" class="news-clients-img"></li>
+                    <li class="col"><img src="img/c10.png" alt="billiabong" class="news-clients-img"></li>
+                </ul>
             </div>
         </div>
     </section>

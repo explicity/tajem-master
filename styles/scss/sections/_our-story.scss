@@ -19,8 +19,9 @@
     }
 
     & .wrapper {
-        flex-wrap: nowrap;
         width: 55%;
+        flex-wrap: nowrap;
+        align-items: center;        
 
         div {
             padding-left: 50px;
@@ -37,9 +38,6 @@
 .wrapper {
     position: relative;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;    
 }
 

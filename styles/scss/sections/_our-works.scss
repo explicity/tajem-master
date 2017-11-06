@@ -23,6 +23,13 @@
 .our-works .header {
     padding: 70px 15px 0 15px;
     margin-bottom: 70px;
+
+    & .wrapper {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .header {
@@ -32,7 +39,7 @@
         color: $color-grey-light;
         letter-spacing: 0.7px;
 
-        &:after{
+        &:after {
             content: '';
             border-style: solid;
             border-width: 6px 0 6px 6px;
