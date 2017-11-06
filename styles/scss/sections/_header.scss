@@ -36,8 +36,11 @@ body {
 }
 
 .nav {
-    display: flex;
-    flex-wrap: nowrap;
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
     &-link {
         color: $color-white;

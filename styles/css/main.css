@@ -110,12 +110,12 @@ body {
   vertical-align: top;
 }
 
-/* line 38, ../scss/sections/_header.scss */
-.nav {
+/* line 40, ../scss/sections/_header.scss */
+.nav ul {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 42, ../scss/sections/_header.scss */
+/* line 45, ../scss/sections/_header.scss */
 .nav-link {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -124,17 +124,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.33px;
 }
-/* line 51, ../scss/sections/_header.scss */
+/* line 54, ../scss/sections/_header.scss */
 .nav .nav-link {
   margin-left: 2em;
 }
-/* line 54, ../scss/sections/_header.scss */
+/* line 57, ../scss/sections/_header.scss */
 .nav .nav-link:hover {
   color: #00e0d0;
   transition: .5s;
 }
 
-/* line 62, ../scss/sections/_header.scss */
+/* line 65, ../scss/sections/_header.scss */
 .cover {
   position: absolute;
   top: 50%;
@@ -145,7 +145,7 @@ body {
   padding: 0 10px;
 }
 
-/* line 73, ../scss/sections/_header.scss */
+/* line 76, ../scss/sections/_header.scss */
 .main-heading {
   letter-spacing: 0.32px;
   font-weight: 600;
@@ -154,7 +154,7 @@ body {
   font-family: "Playfair Display", serif;
   margin-bottom: 30px;
 }
-/* line 81, ../scss/sections/_header.scss */
+/* line 84, ../scss/sections/_header.scss */
 .main-heading:after {
   border-bottom-color: #00e0d0;
   padding-top: 20px;
@@ -166,7 +166,7 @@ body {
   border-bottom-width: 0.5px;
 }
 
-/* line 87, ../scss/sections/_header.scss */
+/* line 90, ../scss/sections/_header.scss */
 .cover p {
   letter-spacing: 0.7px;
   line-height: 24px;
@@ -259,31 +259,32 @@ body {
 /* line 12, ../scss/sections/_expertise.scss */
 .expertise header {
   margin-bottom: 50px;
+  padding: 0 10px;
 }
-/* line 15, ../scss/sections/_expertise.scss */
+/* line 16, ../scss/sections/_expertise.scss */
 .expertise header h3 {
   margin-bottom: 15px;
 }
-/* line 19, ../scss/sections/_expertise.scss */
+/* line 20, ../scss/sections/_expertise.scss */
 .expertise header .header-content {
   color: #2f2d35;
 }
 
-/* line 26, ../scss/sections/_expertise.scss */
+/* line 27, ../scss/sections/_expertise.scss */
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 32, ../scss/sections/_expertise.scss */
+/* line 33, ../scss/sections/_expertise.scss */
 .header-content {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   letter-spacing: 1.05px;
   opacity: 0.75;
 }
-/* line 38, ../scss/sections/_expertise.scss */
+/* line 39, ../scss/sections/_expertise.scss */
 .header-content:after {
   border-bottom-color: #413d4b;
   padding-top: 15px;
@@ -296,26 +297,26 @@ body {
   opacity: 0.7;
 }
 
-/* line 44, ../scss/sections/_expertise.scss */
+/* line 45, ../scss/sections/_expertise.scss */
 .expertise li {
   flex: 0 0 33.3%;
   max-width: 33.3%;
   padding: 30px;
 }
-/* line 49, ../scss/sections/_expertise.scss */
+/* line 50, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(3n-2) {
   border-right: 1px solid rgba(0, 0, 0, 0.37);
 }
-/* line 53, ../scss/sections/_expertise.scss */
+/* line 54, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(3n-1) {
   border-right: 1px solid rgba(0, 0, 0, 0.37);
 }
-/* line 57, ../scss/sections/_expertise.scss */
+/* line 58, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(n+4) {
   border-top: 1px solid rgba(0, 0, 0, 0.37);
 }
 
-/* line 62, ../scss/sections/_expertise.scss */
+/* line 63, ../scss/sections/_expertise.scss */
 .li-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -324,14 +325,14 @@ body {
   margin-bottom: 25px;
 }
 
-/* line 71, ../scss/sections/_expertise.scss */
+/* line 72, ../scss/sections/_expertise.scss */
 li p {
   color: #333;
   line-height: 22px;
   letter-spacing: 0.7px;
 }
 
-/* line 79, ../scss/sections/_expertise.scss */
+/* line 80, ../scss/sections/_expertise.scss */
 .picture-one:before {
   content: '';
   display: block;
@@ -343,7 +344,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 83, ../scss/sections/_expertise.scss */
+/* line 84, ../scss/sections/_expertise.scss */
 .picture-two:before {
   content: '';
   display: block;
@@ -355,7 +356,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 87, ../scss/sections/_expertise.scss */
+/* line 88, ../scss/sections/_expertise.scss */
 .picture-three:before {
   content: '';
   display: block;
@@ -367,7 +368,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 91, ../scss/sections/_expertise.scss */
+/* line 92, ../scss/sections/_expertise.scss */
 .picture-four:before {
   content: '';
   display: block;
@@ -379,7 +380,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 95, ../scss/sections/_expertise.scss */
+/* line 96, ../scss/sections/_expertise.scss */
 .picture-five:before {
   content: '';
   display: block;
@@ -391,7 +392,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 99, ../scss/sections/_expertise.scss */
+/* line 100, ../scss/sections/_expertise.scss */
 .picture-six:before {
   content: '';
   display: block;
@@ -427,24 +428,25 @@ li p {
 /* line 20, ../scss/sections/_our-team.scss */
 .our-team header {
   margin-bottom: 50px;
+  padding: 0 10px;
 }
-/* line 23, ../scss/sections/_our-team.scss */
+/* line 24, ../scss/sections/_our-team.scss */
 .our-team header h3 {
   margin-bottom: 15px;
   color: #fff;
 }
-/* line 28, ../scss/sections/_our-team.scss */
+/* line 29, ../scss/sections/_our-team.scss */
 .our-team header .header-content {
   color: #f3f3f3;
 }
-/* line 34, ../scss/sections/_our-team.scss */
+/* line 35, ../scss/sections/_our-team.scss */
 .our-team footer p {
   letter-spacing: 0.7px;
   color: #f3f3f3;
   margin-bottom: 25px;
 }
 
-/* line 44, ../scss/sections/_our-team.scss */
+/* line 45, ../scss/sections/_our-team.scss */
 .our-team .header-content:after {
   border-bottom-color: #fff;
   padding-top: 15px;
@@ -457,12 +459,12 @@ li p {
   opacity: 0.7;
 }
 
-/* line 50, ../scss/sections/_our-team.scss */
+/* line 51, ../scss/sections/_our-team.scss */
 .our-team li {
   border: 1px solid #e1e1e1;
   margin: 0 10px 70px 10px;
 }
-/* line 54, ../scss/sections/_our-team.scss */
+/* line 55, ../scss/sections/_our-team.scss */
 .our-team li h4 {
   color: #fff;
   font-weight: 700;
@@ -470,7 +472,7 @@ li p {
   letter-spacing: 0.7px;
   margin-bottom: 7px;
 }
-/* line 62, ../scss/sections/_our-team.scss */
+/* line 63, ../scss/sections/_our-team.scss */
 .our-team li p {
   opacity: 0.7;
   color: #fafafa;
