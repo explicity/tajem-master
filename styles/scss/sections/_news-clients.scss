@@ -1,0 +1,10 @@
+.news-clients {
+    min-height: 100vh;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+
+    & .wrapper {
+        width: 60%;
+    }
+}
