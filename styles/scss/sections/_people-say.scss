@@ -1,0 +1,78 @@
+.people-say {
+    min-height: 100vh;
+    padding: 70px 0;
+    text-align: center;
+    display: flex;
+    background: url('C:/Users/msoly/Documents/geekhub/tajem-master/img/second-forrest.png') no-repeat center center;
+    background-size: auto 100%;
+
+    & .wrapper {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    & .row {
+        align-items: center;
+    }
+
+    &-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    &-main {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.article {
+    color: $color-white;      
+    padding: 0 10px;  
+    
+    h3 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        font-family: $font-header;
+        margin-bottom: 3px;
+    }
+
+    p {
+        margin-bottom: 50px;        
+
+        &:first-child {
+            opacity: 0.85;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            font-family: $font-heading;
+        }
+
+        &:last-child {
+            opacity: 0.7;
+            text-transform: uppercase;
+            line-height: 22px;
+            font-size: 13px;
+        }
+    }
+}
+
+.quotes:before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 26px;
+        background: url('C:/Users/msoly/Documents/geekhub/tajem-master/img/quotes.png') no-repeat center center;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto 35px auto;
+        z-index: 5; 
+}
+
+.clients-list li {
+    margin: 0 7px;
+}

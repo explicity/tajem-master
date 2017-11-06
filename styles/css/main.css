@@ -509,8 +509,14 @@ li p {
   padding: 70px 15px 0 15px;
   margin-bottom: 70px;
 }
-/* line 28, ../scss/sections/_our-works.scss */
-.our-works .header-link:after {
+
+/* line 31, ../scss/sections/_our-works.scss */
+.header-link {
+  color: #413d4b;
+  letter-spacing: 0.7px;
+}
+/* line 36, ../scss/sections/_our-works.scss */
+.header-link:after {
   content: '';
   border-style: solid;
   border-width: 6px 0 6px 6px;
@@ -519,4 +525,87 @@ li p {
   width: 0;
   height: 0;
   display: inline-block;
+}
+
+/* line 1, ../scss/sections/_people-say.scss */
+.people-say {
+  min-height: 100vh;
+  padding: 70px 0;
+  text-align: center;
+  display: flex;
+  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/second-forrest.png") no-repeat center center;
+  background-size: auto 100%;
+}
+/* line 9, ../scss/sections/_people-say.scss */
+.people-say .wrapper {
+  width: 50%;
+  flex-direction: column;
+}
+/* line 14, ../scss/sections/_people-say.scss */
+.people-say .row {
+  align-items: center;
+}
+/* line 18, ../scss/sections/_people-say.scss */
+.people-say-img {
+  width: 45px;
+  height: 45px;
+}
+/* line 23, ../scss/sections/_people-say.scss */
+.people-say-main {
+  width: 70px;
+  height: 70px;
+}
+
+/* line 29, ../scss/sections/_people-say.scss */
+.article {
+  color: #fff;
+  padding: 0 10px;
+}
+/* line 33, ../scss/sections/_people-say.scss */
+.article h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3px;
+}
+/* line 43, ../scss/sections/_people-say.scss */
+.article p {
+  margin-bottom: 50px;
+}
+/* line 46, ../scss/sections/_people-say.scss */
+.article p:first-child {
+  opacity: 0.85;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-family: "Playfair Display", serif;
+}
+/* line 55, ../scss/sections/_people-say.scss */
+.article p:last-child {
+  opacity: 0.7;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+/* line 64, ../scss/sections/_people-say.scss */
+.quotes:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 26px;
+  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/quotes.png") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 35px auto;
+  z-index: 5;
+}
+
+/* line 76, ../scss/sections/_people-say.scss */
+.clients-list li {
+  margin: 0 7px;
 }
