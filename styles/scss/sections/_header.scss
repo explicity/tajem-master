@@ -5,10 +5,16 @@ body {
     letter-spacing: 0.42px;
 }
 
+.home-section {
+    min-height: 100vh;   
+    color: $color-white;      
+    
+}
+
 .header {
     position: relative;
     z-index: 2;
-
+    
     & .wrapper {
         width: 60%;
         display: flex;
@@ -19,7 +25,6 @@ body {
 }
 
 .logo {
-    color: $color-white;
     font-family: $font-header;
     font-weight: 400;
     font-size: 30px;
@@ -45,7 +50,7 @@ body {
     }
 
     &-link {
-        color: $color-white;
+        color: $color-white;              
         font-family: $font-header;
         font-size: 13px;
         font-weight: 600;
@@ -79,7 +84,6 @@ body {
     letter-spacing: 0.32px;
     font-weight: 600;
     font-size: 32px;
-    color: $color-white;
     font-family: $font-heading;
     margin-bottom: 30px;
 
@@ -92,7 +96,6 @@ body {
     p {
         letter-spacing: 0.7px;
         line-height: 24px;
-        color: $color-white;      
         margin-bottom: 50px;
     }
 }
