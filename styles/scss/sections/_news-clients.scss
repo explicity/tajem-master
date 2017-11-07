@@ -18,10 +18,22 @@
     }
 
     &-img {
-        max-width: 180px;
-        max-height: 100px;
-        padding: 10px 10px;
+        max-width: 160px;
+        max-height: 70px;
 
+    }
+
+    li{
+        margin: 10px 0;
+
+        div {
+            width: 160px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        
     }
 }
 
@@ -29,3 +41,14 @@
     flex: 0 0 50%;
     max-width: 50%;
 }
+
+form div + div {
+    margin-top: 20px;
+}
+
+input, textarea {
+      width: 90%;
+      border: 1px solid $color-border;
+      padding: 15px;
+      letter-spacing: 0.7px;
+  }
