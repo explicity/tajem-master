@@ -1,21 +1,73 @@
 .footer {
     padding: 90px 0 70px 0;
     color: $color-white;
+    background: url('C:/Users/msoly/Documents/geekhub/tajem-master/img/footer.png') no-repeat center center;
+    background-size: auto 100%;
 
     & .wrapper {
         width: 60%;
     }
 
-    &-top {
+    &-btn {
+        background: url("img/btn.png") no-repeat center center;
+        width: 80px;
+        height: 50px;
+        border: 1px solid $color-white;
+        background-color: $color-white;
+        opacity: 0.5;
+        padding: 10px 25px;
+    }
 
-        div {
+    &-link {
+        margin-right: 15px;
+
+        a {
+            color: $color-white;
+        }
+    }
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 25px;
+}
+
+.footer-top {
+    align-items: baseline;
+
+    div {
             flex: 0 0 33.3%;
             max-width: 33.3%;
-        }
+    }
 
-        h4 {
-            margin-bottom: 35px;
-            
+    .small-heading {
+            margin-bottom: 25px; 
+    }
+
+    .footer-logo {
+            margin-bottom: 15px;
+    }
+
+    p, address {
+            line-height: 26px;
+            font-weight: 300;
+            letter-spacing: 0.35px;
+    }
+
+    input {
+        padding: 15px;
+        margin-right: 10px;
+        background-color: transparent;
+        border: 1px solid $color-border-footer;            
+
+        &::placeholder {
+                color: $color-white;
+                opacity: 0.6;  
+                letter-spacing: 0.7px;
         }
     }
 }

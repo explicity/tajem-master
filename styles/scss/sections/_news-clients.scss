@@ -4,6 +4,13 @@
     display: flex;
     align-items: center;
 
+    input, textarea {
+        width: 90%;
+        border: 1px solid $color-border;
+        padding: 15px;
+        letter-spacing: 0.7px;
+    }
+
     h3 {
         margin-bottom: 35px;
     }
@@ -46,9 +53,3 @@ form div + div {
     margin-top: 20px;
 }
 
-input, textarea {
-      width: 90%;
-      border: 1px solid $color-border;
-      padding: 15px;
-      letter-spacing: 0.7px;
-  }
