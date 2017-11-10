@@ -704,21 +704,27 @@ form div + div {
 }
 /* line 11, ../scss/sections/_footer.scss */
 .footer-btn {
-  background: url("img/btn.png") no-repeat center center;
-  width: 80px;
-  height: 50px;
+  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/btn.png") no-repeat center center;
+  background-size: 25px 25px;
+  padding: 23px 35px;
   border: 1px solid #fff;
   background-color: #fff;
   opacity: 0.5;
-  padding: 10px 25px;
+  cursor: pointer;
 }
 /* line 21, ../scss/sections/_footer.scss */
 .footer-link {
+  display: block;
   margin-right: 15px;
   color: #fff;
 }
+/* line 26, ../scss/sections/_footer.scss */
+.footer-link:hover {
+  color: #00e0d0;
+  transition: .5s;
+}
 
-/* line 28, ../scss/sections/_footer.scss */
+/* line 34, ../scss/sections/_footer.scss */
 .flex {
   display: flex;
   align-items: center;
@@ -727,41 +733,84 @@ form div + div {
   margin-bottom: 25px;
 }
 
-/* line 36, ../scss/sections/_footer.scss */
+/* line 42, ../scss/sections/_footer.scss */
 .footer-top {
   align-items: baseline;
   margin-bottom: 70px;
 }
-/* line 40, ../scss/sections/_footer.scss */
+/* line 46, ../scss/sections/_footer.scss */
 .footer-top div {
   flex: 0 0 33.3%;
   max-width: 33.3%;
-  padding-right: 10px;
+  padding-right: 30px;
 }
-/* line 46, ../scss/sections/_footer.scss */
+/* line 52, ../scss/sections/_footer.scss */
 .footer-top .small-heading {
   margin-bottom: 25px;
 }
-/* line 50, ../scss/sections/_footer.scss */
+/* line 56, ../scss/sections/_footer.scss */
 .footer-top .footer-logo {
   margin-bottom: 15px;
 }
-/* line 54, ../scss/sections/_footer.scss */
+/* line 60, ../scss/sections/_footer.scss */
 .footer-top p, .footer-top address {
   line-height: 26px;
   font-weight: 300;
   letter-spacing: 0.35px;
 }
-/* line 60, ../scss/sections/_footer.scss */
+/* line 66, ../scss/sections/_footer.scss */
+.footer-top address {
+  position: relative;
+  padding-left: 25px;
+}
+/* line 71, ../scss/sections/_footer.scss */
 .footer-top input {
   padding: 15px;
   margin-right: 10px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 66, ../scss/sections/_footer.scss */
+/* line 77, ../scss/sections/_footer.scss */
 .footer-top input::placeholder {
   color: #fff;
   opacity: 0.6;
   letter-spacing: 0.7px;
+}
+
+/* line 85, ../scss/sections/_footer.scss */
+.location-icon:before {
+  content: '';
+  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/local.png") no-repeat center center;
+  display: block;
+  width: 14px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 97, ../scss/sections/_footer.scss */
+.phone-icon:before {
+  content: '';
+  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/phone.png") no-repeat center center;
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 108, ../scss/sections/_footer.scss */
+.footer-bottom {
+  letter-spacing: 0.35px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* line 114, ../scss/sections/_footer.scss */
+.footer-bottom-link {
+  margin-right: 20px;
+  color: #fff;
+  text-transform: uppercase;
 }
