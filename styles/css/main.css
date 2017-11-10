@@ -89,14 +89,12 @@ body {
 }
 /* line 18, ../scss/sections/_header.scss */
 .header .wrapper {
-  width: 60%;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 60%;
   padding: 0 15px;
 }
 
-/* line 27, ../scss/sections/_header.scss */
+/* line 25, ../scss/sections/_header.scss */
 .logo {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -105,23 +103,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 35, ../scss/sections/_header.scss */
+/* line 33, ../scss/sections/_header.scss */
 .logo-img {
   width: 44px;
   height: 50px;
 }
 
-/* line 41, ../scss/sections/_header.scss */
+/* line 39, ../scss/sections/_header.scss */
 .align-middle {
   vertical-align: middle;
 }
 
-/* line 47, ../scss/sections/_header.scss */
+/* line 45, ../scss/sections/_header.scss */
 .nav ul {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 52, ../scss/sections/_header.scss */
+/* line 50, ../scss/sections/_header.scss */
 .nav-link {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -130,17 +128,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.33px;
 }
-/* line 61, ../scss/sections/_header.scss */
+/* line 59, ../scss/sections/_header.scss */
 .nav .nav-link {
   margin-left: 2em;
 }
-/* line 64, ../scss/sections/_header.scss */
+/* line 62, ../scss/sections/_header.scss */
 .nav .nav-link:hover {
   color: #00e0d0;
   transition: .5s;
 }
 
-/* line 72, ../scss/sections/_header.scss */
+/* line 70, ../scss/sections/_header.scss */
 .cover {
   position: absolute;
   top: 50%;
@@ -151,7 +149,7 @@ body {
   padding: 0 10px;
 }
 
-/* line 83, ../scss/sections/_header.scss */
+/* line 81, ../scss/sections/_header.scss */
 .main-heading {
   letter-spacing: 0.32px;
   font-weight: 600;
@@ -159,7 +157,7 @@ body {
   font-family: "Playfair Display", serif;
   margin-bottom: 30px;
 }
-/* line 90, ../scss/sections/_header.scss */
+/* line 88, ../scss/sections/_header.scss */
 .main-heading:after {
   border-bottom-color: #00e0d0;
   padding-top: 20px;
@@ -171,11 +169,26 @@ body {
   border-bottom-width: 0.5px;
 }
 
-/* line 96, ../scss/sections/_header.scss */
+/* line 95, ../scss/sections/_header.scss */
 .cover p {
   letter-spacing: 0.7px;
   line-height: 24px;
   margin-bottom: 50px;
+}
+
+/* line 103, ../scss/sections/_header.scss */
+.content-between {
+  justify-content: space-between;
+}
+
+/* line 107, ../scss/sections/_header.scss */
+.content-center {
+  justify-content: center;
+}
+
+/* line 111, ../scss/sections/_header.scss */
+.content-start {
+  justify-content: flex-start;
 }
 
 /* line 1, ../scss/sections/_our-story.scss */
@@ -281,17 +294,16 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-/* line 39, ../scss/sections/_expertise.scss */
+/* line 38, ../scss/sections/_expertise.scss */
 .header-content {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   letter-spacing: 1.05px;
   opacity: 0.75;
 }
-/* line 45, ../scss/sections/_expertise.scss */
+/* line 44, ../scss/sections/_expertise.scss */
 .header-content:after {
   border-bottom-color: #413d4b;
   padding-top: 15px;
@@ -304,26 +316,26 @@ body {
   opacity: 0.7;
 }
 
-/* line 51, ../scss/sections/_expertise.scss */
+/* line 50, ../scss/sections/_expertise.scss */
 .expertise li {
   flex: 0 0 33.3%;
   max-width: 33.3%;
   padding: 30px;
 }
-/* line 56, ../scss/sections/_expertise.scss */
+/* line 55, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(3n-2) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 60, ../scss/sections/_expertise.scss */
+/* line 59, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(3n-1) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 64, ../scss/sections/_expertise.scss */
+/* line 63, ../scss/sections/_expertise.scss */
 .expertise li:nth-child(n+4) {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 69, ../scss/sections/_expertise.scss */
+/* line 68, ../scss/sections/_expertise.scss */
 .small-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -331,14 +343,14 @@ body {
   letter-spacing: 0.7px;
 }
 
-/* line 77, ../scss/sections/_expertise.scss */
+/* line 76, ../scss/sections/_expertise.scss */
 li p {
   color: #333;
   line-height: 22px;
   letter-spacing: 0.7px;
 }
 
-/* line 85, ../scss/sections/_expertise.scss */
+/* line 84, ../scss/sections/_expertise.scss */
 .picture-one:before {
   content: '';
   display: block;
@@ -350,7 +362,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 89, ../scss/sections/_expertise.scss */
+/* line 88, ../scss/sections/_expertise.scss */
 .picture-two:before {
   content: '';
   display: block;
@@ -362,7 +374,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 93, ../scss/sections/_expertise.scss */
+/* line 92, ../scss/sections/_expertise.scss */
 .picture-three:before {
   content: '';
   display: block;
@@ -374,7 +386,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 97, ../scss/sections/_expertise.scss */
+/* line 96, ../scss/sections/_expertise.scss */
 .picture-four:before {
   content: '';
   display: block;
@@ -386,7 +398,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 101, ../scss/sections/_expertise.scss */
+/* line 100, ../scss/sections/_expertise.scss */
 .picture-five:before {
   content: '';
   display: block;
@@ -398,7 +410,7 @@ li p {
   margin: 0 auto 35px auto;
   z-index: 5;
 }
-/* line 105, ../scss/sections/_expertise.scss */
+/* line 104, ../scss/sections/_expertise.scss */
 .picture-six:before {
   content: '';
   display: block;
@@ -452,7 +464,7 @@ li p {
   margin-bottom: 25px;
 }
 
-/* line 45, ../scss/sections/_our-team.scss */
+/* line 46, ../scss/sections/_our-team.scss */
 .our-team .header-content:after {
   border-bottom-color: #fff;
   padding-top: 15px;
@@ -465,18 +477,18 @@ li p {
   opacity: 0.7;
 }
 
-/* line 51, ../scss/sections/_our-team.scss */
+/* line 52, ../scss/sections/_our-team.scss */
 .our-team li {
   border: 1px solid #e1e1e1;
   margin: 0 10px 70px 10px;
 }
-/* line 55, ../scss/sections/_our-team.scss */
+/* line 56, ../scss/sections/_our-team.scss */
 .our-team li h4 {
   color: #fff;
   font-weight: 700;
   margin-bottom: 7px;
 }
-/* line 61, ../scss/sections/_our-team.scss */
+/* line 62, ../scss/sections/_our-team.scss */
 .our-team li p {
   opacity: 0.7;
   color: #fafafa;
@@ -499,33 +511,31 @@ li p {
 }
 /* line 12, ../scss/sections/_our-works.scss */
 .our-works-img {
-  width: 265px;
-  height: 100%;
+  width: 266px;
+  height: 200px;
+  display: block;
 }
-/* line 17, ../scss/sections/_our-works.scss */
+/* line 18, ../scss/sections/_our-works.scss */
 .our-works div {
   text-align: center;
 }
 
-/* line 23, ../scss/sections/_our-works.scss */
+/* line 24, ../scss/sections/_our-works.scss */
 .our-works .header {
-  padding: 70px 15px 0 15px;
-  margin-bottom: 70px;
+  padding: 0 15px;
 }
 /* line 27, ../scss/sections/_our-works.scss */
 .our-works .header .wrapper {
   width: 60%;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* line 37, ../scss/sections/_our-works.scss */
+/* line 35, ../scss/sections/_our-works.scss */
 .header-link {
   color: #413d4b;
   letter-spacing: 0.7px;
 }
-/* line 42, ../scss/sections/_our-works.scss */
+/* line 40, ../scss/sections/_our-works.scss */
 .header-link:after {
   content: '';
   border-style: solid;
@@ -696,13 +706,10 @@ form div + div {
 /* line 21, ../scss/sections/_footer.scss */
 .footer-link {
   margin-right: 15px;
-}
-/* line 24, ../scss/sections/_footer.scss */
-.footer-link a {
   color: #fff;
 }
 
-/* line 31, ../scss/sections/_footer.scss */
+/* line 28, ../scss/sections/_footer.scss */
 .flex {
   display: flex;
   align-items: center;
@@ -711,37 +718,39 @@ form div + div {
   margin-bottom: 25px;
 }
 
-/* line 39, ../scss/sections/_footer.scss */
+/* line 36, ../scss/sections/_footer.scss */
 .footer-top {
   align-items: baseline;
+  margin-bottom: 70px;
 }
-/* line 42, ../scss/sections/_footer.scss */
+/* line 40, ../scss/sections/_footer.scss */
 .footer-top div {
   flex: 0 0 33.3%;
   max-width: 33.3%;
+  padding-right: 10px;
 }
-/* line 47, ../scss/sections/_footer.scss */
+/* line 46, ../scss/sections/_footer.scss */
 .footer-top .small-heading {
   margin-bottom: 25px;
 }
-/* line 51, ../scss/sections/_footer.scss */
+/* line 50, ../scss/sections/_footer.scss */
 .footer-top .footer-logo {
   margin-bottom: 15px;
 }
-/* line 55, ../scss/sections/_footer.scss */
+/* line 54, ../scss/sections/_footer.scss */
 .footer-top p, .footer-top address {
   line-height: 26px;
   font-weight: 300;
   letter-spacing: 0.35px;
 }
-/* line 61, ../scss/sections/_footer.scss */
+/* line 60, ../scss/sections/_footer.scss */
 .footer-top input {
   padding: 15px;
   margin-right: 10px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 67, ../scss/sections/_footer.scss */
+/* line 66, ../scss/sections/_footer.scss */
 .footer-top input::placeholder {
   color: #fff;
   opacity: 0.6;

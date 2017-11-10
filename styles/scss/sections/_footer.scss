@@ -20,10 +20,7 @@
 
     &-link {
         margin-right: 15px;
-
-        a {
-            color: $color-white;
-        }
+        color: $color-white;
     }
 
 }
@@ -38,10 +35,12 @@
 
 .footer-top {
     align-items: baseline;
+    margin-bottom: 70px;
 
     div {
             flex: 0 0 33.3%;
             max-width: 33.3%;
+            padding-right: 10px;
     }
 
     .small-heading {

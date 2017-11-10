@@ -16,10 +16,8 @@ body {
     z-index: 2;
     
     & .wrapper {
-        width: 60%;
-        display: flex;
         align-items: center;
-        justify-content: space-between;
+        width: 60%;
         padding: 0 15px;
     }
 }
@@ -62,7 +60,7 @@ body {
         margin-left: 2em;
 
         &:hover {
-            color: #00e0d0;
+            color: $color-green;
             transition: .5s;
         }
     }
@@ -93,9 +91,23 @@ body {
 }
 
 .cover {
+
     p {
         letter-spacing: 0.7px;
         line-height: 24px;
         margin-bottom: 50px;
     }
+}
+
+
+.content-between {
+    justify-content: space-between;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.content-start {
+    justify-content: flex-start;
 }
