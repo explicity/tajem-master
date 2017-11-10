@@ -8,7 +8,12 @@
         width: 90%;
         border: 1px solid $color-border;
         padding: 15px;
-        letter-spacing: 0.7px;
+
+        &::placeholder {
+            letter-spacing: 0.7px;
+            opacity: 0.6;
+            color: $color-grey-light;   
+        }
     }
 
     h3 {
@@ -20,27 +25,23 @@
         flex-wrap: nowrap;
     }
 
-    .row {
-        align-items: baseline;
-    }
 
     &-img {
-        max-width: 160px;
+        max-width: 162px;
         max-height: 70px;
+        margin: 0 auto;
 
     }
 
-    li{
-        margin: 10px 0;
+    li { 
+        display: flex;
+        margin: 0 30px 50px 0;
+        justify-content: flex-start;
+        align-items: center;
 
-        div {
-            width: 160px;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
+        &.col {
+            max-width: 162px;
         }
-        
     }
 }
 

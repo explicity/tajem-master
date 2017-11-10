@@ -24,6 +24,11 @@
         width: 70px;
         height: 70px;
     }
+
+    &-arrow {
+        width: 11px;
+        height: 21px;
+    }
 }
 
 .article {
@@ -70,5 +75,9 @@
 }
 
 .clients-list li {
+    margin: 0 7px;
+}
+
+.arrows {
     margin: 0 7px;
 }

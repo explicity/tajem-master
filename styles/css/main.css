@@ -28,12 +28,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
   outline: none;
 }
-/* line 35, ../scss/sections/_buttons.scss */
+/* line 33, ../scss/sections/_buttons.scss */
 .button-logo {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -575,23 +573,28 @@ li p {
   width: 70px;
   height: 70px;
 }
+/* line 28, ../scss/sections/_people-say.scss */
+.people-say-arrow {
+  width: 11px;
+  height: 21px;
+}
 
-/* line 29, ../scss/sections/_people-say.scss */
+/* line 34, ../scss/sections/_people-say.scss */
 .article {
   color: #fff;
   padding: 0 10px;
 }
-/* line 33, ../scss/sections/_people-say.scss */
+/* line 38, ../scss/sections/_people-say.scss */
 .article h4 {
   font-weight: 600;
   line-height: 22px;
   margin-bottom: 3px;
 }
-/* line 39, ../scss/sections/_people-say.scss */
+/* line 44, ../scss/sections/_people-say.scss */
 .article p {
   margin-bottom: 50px;
 }
-/* line 42, ../scss/sections/_people-say.scss */
+/* line 47, ../scss/sections/_people-say.scss */
 .article p:first-child {
   opacity: 0.85;
   font-size: 16px;
@@ -600,7 +603,7 @@ li p {
   letter-spacing: 0.4px;
   font-family: "Playfair Display", serif;
 }
-/* line 51, ../scss/sections/_people-say.scss */
+/* line 56, ../scss/sections/_people-say.scss */
 .article p:last-child {
   opacity: 0.7;
   text-transform: uppercase;
@@ -608,7 +611,7 @@ li p {
   font-size: 13px;
 }
 
-/* line 60, ../scss/sections/_people-say.scss */
+/* line 65, ../scss/sections/_people-say.scss */
 .quotes:before {
   content: '';
   display: block;
@@ -621,8 +624,13 @@ li p {
   z-index: 5;
 }
 
-/* line 72, ../scss/sections/_people-say.scss */
+/* line 77, ../scss/sections/_people-say.scss */
 .clients-list li {
+  margin: 0 7px;
+}
+
+/* line 81, ../scss/sections/_people-say.scss */
+.arrows {
   margin: 0 7px;
 }
 
@@ -638,46 +646,47 @@ li p {
   width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px;
-  letter-spacing: 0.7px;
 }
-/* line 14, ../scss/sections/_news-clients.scss */
+/* line 12, ../scss/sections/_news-clients.scss */
+.news-clients input::placeholder, .news-clients textarea::placeholder {
+  letter-spacing: 0.7px;
+  opacity: 0.6;
+  color: #413d4b;
+}
+/* line 19, ../scss/sections/_news-clients.scss */
 .news-clients h3 {
   margin-bottom: 35px;
 }
-/* line 18, ../scss/sections/_news-clients.scss */
+/* line 23, ../scss/sections/_news-clients.scss */
 .news-clients .wrapper {
   width: 60%;
   flex-wrap: nowrap;
 }
-/* line 23, ../scss/sections/_news-clients.scss */
-.news-clients .row {
-  align-items: baseline;
-}
-/* line 27, ../scss/sections/_news-clients.scss */
+/* line 29, ../scss/sections/_news-clients.scss */
 .news-clients-img {
-  max-width: 160px;
+  max-width: 162px;
   max-height: 70px;
-}
-/* line 33, ../scss/sections/_news-clients.scss */
-.news-clients li {
-  margin: 10px 0;
+  margin: 0 auto;
 }
 /* line 36, ../scss/sections/_news-clients.scss */
-.news-clients li div {
-  width: 160px;
-  height: 70px;
+.news-clients li {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  margin: 0 30px 50px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 42, ../scss/sections/_news-clients.scss */
+.news-clients li.col {
+  max-width: 162px;
 }
 
-/* line 47, ../scss/sections/_news-clients.scss */
+/* line 48, ../scss/sections/_news-clients.scss */
 .col {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-/* line 52, ../scss/sections/_news-clients.scss */
+/* line 53, ../scss/sections/_news-clients.scss */
 form div + div {
   margin-top: 20px;
 }
