@@ -354,7 +354,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/first.png");
+  background-image: url("../../img/first.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -366,7 +366,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/second.png");
+  background-image: url("../../img/second.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -378,7 +378,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/third.png");
+  background-image: url("../../img/third.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -390,7 +390,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/forth.png");
+  background-image: url("../../img/forth.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -402,7 +402,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/fifth.png");
+  background-image: url("../../img/fifth.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -414,7 +414,7 @@ li p {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/sixth.png");
+  background-image: url("../../img/sixth.png");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -428,7 +428,7 @@ li p {
   text-align: center;
   display: flex;
   align-items: center;
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/forrest.png") no-repeat center center;
+  background: url("../../img/forrest.png") no-repeat center center;
   background-size: auto 100%;
 }
 /* line 10, ../scss/sections/_our-team.scss */
@@ -552,7 +552,7 @@ li p {
   text-align: center;
   display: flex;
   align-items: center;
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/second-forrest.png") no-repeat center center;
+  background: url("../../img/second-forrest.png") no-repeat center center;
   background-size: auto 100%;
 }
 /* line 10, ../scss/sections/_people-say.scss */
@@ -617,7 +617,7 @@ li p {
   display: block;
   width: 32px;
   height: 26px;
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/quotes.png") no-repeat center center;
+  background: url("../../img/quotes.png") no-repeat center center;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 35px auto;
@@ -695,7 +695,7 @@ form div + div {
 .footer {
   padding: 90px 0 70px 0;
   color: #fff;
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/footer.png") no-repeat center center;
+  background: url("../../img/footer.png") no-repeat center center;
   background-size: auto 100%;
 }
 /* line 7, ../scss/sections/_footer.scss */
@@ -704,7 +704,7 @@ form div + div {
 }
 /* line 11, ../scss/sections/_footer.scss */
 .footer-btn {
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/btn.png") no-repeat center center;
+  background: url("../../img/btn.png") no-repeat center center;
   background-size: 25px 25px;
   padding: 23px 35px;
   border: 1px solid #fff;
@@ -780,7 +780,7 @@ form div + div {
 /* line 85, ../scss/sections/_footer.scss */
 .location-icon:before {
   content: '';
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/local.png") no-repeat center center;
+  background: url("../../img/local.png") no-repeat center center;
   display: block;
   width: 14px;
   height: 19px;
@@ -792,7 +792,7 @@ form div + div {
 /* line 97, ../scss/sections/_footer.scss */
 .phone-icon:before {
   content: '';
-  background: url("C:/Users/msoly/Documents/geekhub/tajem-master/img/phone.png") no-repeat center center;
+  background: url("../../img/phone.png") no-repeat center center;
   display: block;
   width: 17px;
   height: 17px;

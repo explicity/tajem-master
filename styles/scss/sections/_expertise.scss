@@ -82,26 +82,26 @@ li p {
 
 .picture {
     &-one:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/first.png');
+        @include pseudo('../../img/first.png');
     }
 
     &-two:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/second.png');
+        @include pseudo('../../img/second.png');
     }
 
     &-three:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/third.png');
+        @include pseudo('../../img/third.png');
     }
 
     &-four:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/forth.png');
+        @include pseudo('../../img/forth.png');
     }
     
     &-five:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/fifth.png');
+        @include pseudo('../../img/fifth.png');
     }
 
     &-six:before {
-        @include pseudo('C:/Users/msoly/Documents/geekhub/tajem-master/img/sixth.png');
+        @include pseudo('../../img/sixth.png');
     }
 }
